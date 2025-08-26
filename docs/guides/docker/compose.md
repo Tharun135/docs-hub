@@ -1,0 +1,9 @@
+# Docker Compose Basics
+```yaml
+services:
+  web:
+    build: .
+    ports: ["8000:8000"]
+  redis:
+    image: redis:7
+```

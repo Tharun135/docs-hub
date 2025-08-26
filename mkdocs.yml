@@ -53,23 +53,38 @@ markdown_extensions:
   - pymdownx.snippets
   - pymdownx.superfences
   - pymdownx.tabbed:
-      alternate_style: true
+    alternate_style: true
   - pymdownx.tasklist:
-      custom_checkbox: true
+    custom_checkbox: true
+  - pymdownx.mermaid
   - toc:
-      permalink: true
+    permalink: true
 
 nav:
   - Home: index.md
   - Guides:
-      - Git:
-          - guides/git/basics.md
-      - Linux:
-          - guides/linux/commands.md
-      - Docker:
-          - guides/docker/intro.md
-      - Python:
-          - guides/python/basics.md
+      - Git: cheatsheets/git.md
+      - Linux: cheatsheets/linux.md
+      - Docker: cheatsheets/docker.md
+  - Snippets:
+      - Mermaid: snippets/mermaid.md
+      - Admonitions: snippets/admonitions.md
+  - Templates:
+      - How-To: templates/how-to.md
+      - Troubleshooting: templates/troubleshooting.md
+  - DevOps:
+      - CI/CD: guides/devops/ci-cd.md
+  - Docker:
+      - Compose: guides/docker/compose.md
+  - Kubernetes:
+      - Intro: guides/kubernetes/intro.md
+  - Python:
+      - Packaging: guides/python/packaging.md
+  - Linux:
+      - Networking: guides/linux/networking.md
+  - FAQ: faq.md
+  - Contributing: meta/contributing.md
+  - Writing Style Guide: meta/style-guide.md
   - About: about.md
 
 extra_css:
