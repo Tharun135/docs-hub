@@ -1,0 +1,76 @@
+site_name: Docs Hub
+site_description: A lightweight knowledge hub with MkDocs Material.
+site_url: https://your-domain-or-github-pages-url
+repo_url: https://github.com/Tharun135/docs-hub
+repo_name: Tharun135/docs-hub
+
+theme:
+  name: material
+  language: en
+  features:
+    - navigation.tabs
+    - navigation.tracking
+    - navigation.expand
+    - navigation.footer
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+    - search.suggest
+    - search.highlight
+    - toc.integrate
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  logo: assets/images/logo.png
+  favicon: assets/images/favicon.png
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Tharun135
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/tharun-sebastian-82973743/
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - pymdownx.details
+  - pymdownx.emoji
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - toc:
+      permalink: true
+
+nav:
+  - Home: index.md
+  - Guides:
+      - Git:
+          - guides/git/basics.md
+      - Linux:
+          - guides/linux/commands.md
+      - Docker:
+          - guides/docker/intro.md
+      - Python:
+          - guides/python/basics.md
+  - About: about.md
+
+extra_css:
+  - assets/styles/extra.css

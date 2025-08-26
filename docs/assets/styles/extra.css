@@ -1,0 +1,10 @@
+/* Custom tweaks */
+.md-typeset h1 {
+  letter-spacing: 0.2px;
+}
+.md-typeset .admonition {
+  border-radius: 12px;
+}
+code, pre code {
+  font-size: 0.9rem;
+}
